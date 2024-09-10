@@ -10,11 +10,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class TodoDTO {
+public class MemberDTO {
 
-    private Long tno;
-    private String title;
-    private LocalDate dueDate;
-    private boolean finished;
+    private String id;
+    private String pw;
+    private String name;
 
 }

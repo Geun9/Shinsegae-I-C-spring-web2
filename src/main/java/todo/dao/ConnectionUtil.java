@@ -1,8 +1,7 @@
-package com.ssg.springex.todo.dao;
+package todo.dao;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-
 import java.sql.Connection;
 
 public enum ConnectionUtil {

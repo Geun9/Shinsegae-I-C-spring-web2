@@ -1,16 +1,15 @@
-package com.ssg.springex.todo.controller;
+package todo.controller;
 
-import com.ssg.springex.todo.dto.TodoDTO;
-import com.ssg.springex.todo.service.TodoService;
-import lombok.extern.log4j.Log4j2;
-
+import java.io.IOException;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.List;
+import lombok.extern.log4j.Log4j2;
+import todo.dto.TodoDTO;
+import todo.service.TodoService;
 
 @WebServlet(name = "todoListController", urlPatterns = "/todo/list")
 @Log4j2

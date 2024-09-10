@@ -1,16 +1,13 @@
-package com.ssg.springex.todo.service;
+package todo.service;
 
-import com.ssg.springex.todo.dao.TodoDAO;
-import com.ssg.springex.todo.domain.TodoVO;
-import com.ssg.springex.todo.dto.TodoDTO;
-import com.ssg.springex.todo.util.ModelUtil;
-import lombok.extern.log4j.Log4j2;
-import org.modelmapper.ModelMapper;
-
-import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import lombok.extern.log4j.Log4j2;
+import org.modelmapper.ModelMapper;
+import todo.dao.TodoDAO;
+import todo.domain.TodoVO;
+import todo.dto.TodoDTO;
+import todo.util.ModelUtil;
 
 @Log4j2
 public enum TodoService {

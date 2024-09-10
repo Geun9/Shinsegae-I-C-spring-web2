@@ -1,8 +1,4 @@
-package com.ssg.springex.todo.dao;
-
-import com.ssg.springex.todo.domain.TodoVO;
-import com.ssg.springex.todo.dto.TodoDTO;
-import lombok.Cleanup;
+package todo.dao;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -10,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import lombok.Cleanup;
+import todo.domain.TodoVO;
 
 public class TodoDAO {
     public void insert(TodoVO vo) throws Exception {
