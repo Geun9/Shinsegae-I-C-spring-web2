@@ -44,7 +44,7 @@ public class TodoModifyController extends HttpServlet {
 
         TodoDTO todoDTO = TodoDTO.builder().tno(Long.parseLong(req.getParameter("tno"))).title(req.getParameter("title"))
                 .dueDate(LocalDate.parse(req.getParameter("dueDate"),DATETIMEFORMATTER))
-                .finished(finishedStr != null  && finishedStr.equals("on")).build();
+            .finished(Boolean.parseBoolean(req.getParameter("finished"))).build();
 
         log.info("todo Modify Controller ....POST");
         log.info(todoDTO);
